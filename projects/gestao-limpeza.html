@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logMa.png"
+      type="image/x-icon"
+    />
+    <title>Sistema de Gestão de Limpeza | Madelosa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: #07111f;
+        color: #edf5ff;
+        font-family: Inter, system-ui, sans-serif;
+      }
+      .muted {
+        color: #9fb0c4;
+      }
+      .panel {
+        background: #102035;
+        border: 1px solid #ffffff18;
+        border-radius: 20px;
+      }
+      .accent {
+        color: #64e5c1;
+      }
+      .flow {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+      }
+      .flow div {
+        background: #0b1726;
+        border: 1px solid #ffffff12;
+        border-radius: 14px;
+        padding: 18px;
+        text-align: center;
+      }
+      .flow b {
+        color: #64e5c1;
+        display: block;
+        margin-bottom: 6px;
+      }
+      @media (max-width: 767px) {
+        .flow {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container py-2">
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <img
+            src="../assets/img/Ma.png"
+            alt="Maria Logo"
+            class="logo-img"
+            width="50px"
+            height="50px"
+          />María de los Angeles Moreno.</a
+        >
+        <a class="btn btn-outline-light btn-sm" href="../index.html"
+          >← Portfólio</a
+        >
+      </div>
+    </nav>
+    <main class="container py-5">
+      <img
+        src="../assets/img/logOrglimp.png"
+        alt="Orglimp Logo"
+        class="logo-img"
+        width="55px"
+        height="70px"
+      />
+      <span class="accent fw-bold">SISTEMA DE GESTÃO • ORG-LIMP</span>
+      <h1 class="display-5 fw-bold mt-2">Sistema de Gestão de Limpeza</h1>
+      <p class="lead muted">
+        Sistema de gestão de atividades operacionais, desenvolvido a partir de
+        um problema de planejamento, distribuição e acompanhamento de tarefas.
+      </p>
+      <div class="panel p-4 mt-4">
+        <h2 class="h5">🎯 Problema de negócio</h2>
+        <p class="muted">
+          Dificuldade para planejar a semana, distribuir tarefas, acompanhar a
+          execução e fornecer ao gestor uma visão confiável do andamento das
+          atividades.
+        </p>
+      </div>
+
+      <div class="panel p-4 mt-4">
+        <h2 class="h5">💡 Solução</h2>
+        <p class="muted">
+          Sistema com perfis de Gerente e Supervisor, plano semanal, tarefas,
+          status, notificações, relatórios e configurações. permitindo que o
+          Gerente planeje as atividades semanais e que o Supervisor acompanhe e
+          atualize o andamento das tarefas em tempo real.
+        </p>
+      </div>
+      <div class="panel p-4 mt-4">
+        <h2 class="h5">🔄 Processo modelado</h2>
+        <div class="flow mt-4">
+          <div><b>01</b>Planejar</div>
+          <div><b>02</b>Distribuir</div>
+          <div><b>03</b>Executar</div>
+          <div><b>04</b>Atualizar</div>
+          <div><b>05</b>Monitorar</div>
+        </div>
+      </div>
+      <div class="row g-4 mt-1">
+        <div class="col-lg-7">
+          <div class="panel p-4 h-100">
+            <h2 class="h5">Funcionalidades</h2>
+            <ul class="muted">
+              <li>Dashboard por perfil</li>
+              <li>Plano semanal</li>
+              <li>Cadastro e edição de tarefas</li>
+              <li>Filtros e paginação</li>
+              <li>Controle de usuários</li>
+              <li>Status das atividades</li>
+              <li>Notificações e relatórios</li>
+              <li>Configurações</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="panel p-4 h-100">
+            <h2 class="h5">Tecnologias</h2>
+            <p class="muted">
+              HTML5 • CSS3 • Bootstrap • JavaScript • LocalStorage • Java •
+              Spring Boot • MySQL
+            </p>
+            <h2 class="h5 mt-4">O que demonstra</h2>
+            <p class="muted">
+              Análise de requisitos, modelagem de processos, regras de negócio,
+              UX operacional e desenvolvimento de sistema responsivo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="panel p-4 mt-4">
+        <h2 class="h5">💡 Evolução futura</h2>
+        <p class="muted mb-0">
+          A arquitetura pode evoluir de LocalStorage para API REST com
+          Java/Spring Boot, autenticação, banco MySQL e integrações
+          corporativas.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
